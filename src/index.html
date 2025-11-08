@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mediconnect_Bitacora_INICIO</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ENCABEZADO / NAVBAR -->
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>MEDICONNECT</h1>
+          <span>Bitácora Digital</span>
+        </div>
+
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contáctanos</a></li>
+          <li><a href="#login" class="login-btn">Iniciar Sesión</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h2>Transforma la gestión hospitalaria con Mediconnect</h2>
+        <p>
+          Bitácora Digital Compartida para conectar pacientes y equipos médicos
+          en tiempo real, mejorando la seguridad, transparencia y atención
+          humana.
+        </p>
+      </div>
+      <div class="hero-bottom">
+        <div class="feature">
+          <img src="img/tablet.png" alt="Tableta" />
+          <p>
+            Acceso desde tablets junto a la cama<br />
+            Permite registrar y visualizar información clínica en tiempo real,
+            facilitando la comunicación directa en el punto de atención.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="img/health.png" alt="estetoscopium" />
+          <p>
+            Equipo médico y paciente conectados<br />
+            El paciente participa activamente registrando síntomas y dudas,
+            fortaleciendo la continuidad y calidad del cuidado.
+          </p>
+        </div>
+        <div class="feature">
+          <img src="img/shield.png" alt="escudo" />
+          <p>
+            Seguridad y transparencia<br />
+            Reduce riesgos en el cambio de turno y mejora la trazabilidad de la
+            atención con registros claros y estructurados.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="about">
+      <h2>Nosotros</h2>
+      <div class="team">
+        <div class="member">
+          <img src="img/foto1.jpg" alt="ñarlos" />
+          <h3>Carlos Blancas Chávez</h3>
+          <p>Director de Tecnología<br />& Co-Fundador</p>
+        </div>
+        <div class="member">
+          <img src="img/foto2.jpg" alt="yo pe" />
+          <h3>Ivonne Ibañez Torres</h3>
+          <p>Directora de Marketing<br />& Co-Fundadora</p>
+        </div>
+        <div class="member">
+          <img src="img/foto3.jpg" alt="luciaña" />
+          <h3>Luciana Vargas Cossio</h3>
+          <p>Directora de Innovación<br />& Co-Fundadora</p>
+        </div>
+        <div class="member">
+          <img src="img/foto4.jpg" alt="joje" />
+          <h3>Jorge Surco Villasante</h3>
+          <p>Director General<br />& Co-Fundador</p>
+        </div>
+        <div class="member">
+          <img src="img/foto5.jpg" alt="bamjo" />
+          <h3>Boris Alvarado Millan</h3>
+          <p>Director Financiero<br />& Co-Fundador</p>
+        </div>
+        <div class="member">
+          <img src="img/foto6.jpg" alt="ñarcelo" />
+          <h3>Marcelo Cuadros Villanueva</h3>
+          <p>Director de Operaciones<br />& Co-Fundador</p>
+        </div>
+      </div>
+
+      <div class="about-info">
+        <h3>Nacimos para ayudarte de modo integral</h3>
+        <p>
+          En el corazón de cada turno clínico hay algo que nunca debería
+          perderse: la información vital del paciente. Sin embargo, el cambio de
+          turno —o handover— se ha convertido en un verdadero reto. El gran
+          volumen de pacientes, la presión del tiempo y la complejidad de los
+          casos hacen que datos importantes se transmitan de forma apresurada,
+          incompleta o incluso.
+        </p>
+        <p>
+          En el corazón de cada turno clínico hay algo que nunca debería
+          perderse: la información vital del paciente. Sin embargo, el cambio de
+          turno —o handover— se ha convertido en un verdadero reto. El gran
+          volumen de pacientes, la presión del tiempo y la complejidad de los
+          casos hacen que datos importantes se pierdan.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="contact">
+      <h2>Contáctanos</h2>
+      <p>Para poder atenderlo mejor complete todos los formularios</p>
+      <form action="#" method="post" class="contact-form">
+        <div class="form-left">
+          <input type="text" name="nombres" placeholder="Nombres" required />
+          <input
+            type="text"
+            name="apellidos"
+            placeholder="Apellidos"
+            required
+          />
+          <input
+            type="email"
+            name="correo"
+            placeholder="Correo electrónico"
+            required
+          />
+          <input type="tel" name="telefono" placeholder="Teléfono" required />
+          <input type="text" name="estudio" placeholder="Tipo de Estudio" />
+          <div class="captcha">
+            <p>[reCAPTCHA aquí]</p>
+          </div>
+          <button type="submit">Enviar Mensaje</button>
+        </div>
+        <div class="form-right">
+          <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+        </div>
+      </form>
+
+      <div class="consulta">
+        <p>
+          Si ya se registró su consulta, ingrese el número recibido para ver su
+          historial
+        </p>
+        <input type="text" name="nconsulta" placeholder="Ingrese N° Consulta" />
+        <button>Ver</button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">
+        <h2>MEDICONNECT</h2>
+        <span>Bitácora Digital</span>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Enlaces Rápidos</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contáctanos</a></li>
+            <li><a href="#resultados">Resultados</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Nuestras Políticas</h4>
+          <ul>
+            <li><a href="#">Términos del Servicio</a></li>
+            <li><a href="#">Política de Privacidad</a></li>
+          </ul>
+        </div>
+        <div class="footer-libro">
+          <a href="#">Libro de Reclamaciones</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
