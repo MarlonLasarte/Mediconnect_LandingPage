@@ -19,28 +19,23 @@ header {
   top: 0;
   z-index: 100;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo h1 {
-  font-size: 20px;
-}
-
-.logo span {
-  font-size: 12px;
-  display: block;
+.logo img {
+width: 250px;
+height: auto;
 }
 
 .menu {
   display: flex;
-  gap: 25px;
+  gap: 50px;
   list-style: none;
+  align-items: center;
 }
-
 .menu a {
   color: white;
   text-decoration: none;
@@ -57,217 +52,278 @@ nav {
   border-radius: 4px;
 }
 
-/* ====== el coso ese del medio  ====== */
-.hero {
-  background: url("assets/images/inicio-bg.jpg") no-repeat center/cover;
-  min-height: 10vh;
+.sec-1 {
   position: relative;
-  padding-top: 120px;
+  margin-top: 90px; /* espacio para el header fijo */
+  height: 100vh;
+  overflow: hidden;
 }
 
-.hero .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+.fondo-1 img {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+  filter: brightness(60%);
 }
 
-.hero-content {
-  position: relative;
+.contenido-cuadro-negro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 60px;
+  border-radius: 10px;
   text-align: center;
-  max-width: 800px;
-  margin: auto;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 40px;
-  border-radius: 15px;
-  margin-top: 125px;
+  max-width: 700px;
 }
 
-.hero-bottom {
+.contenido-cuadro-negro h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.contenido-cuadro-negro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+/* ====== SECCIÓN CARACTERÍSTICAS ====== */
+.sec-2 {
   background-color: #003366;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.sec-2{
   display: flex;
   justify-content: center;
+  gap: 40px;
   flex-wrap: wrap;
-  padding: 40px 20px;
-  gap: 20px;
-  margin-top: 215px;
+  padding: 0 40px;
 }
 
-.feature {
-  text-align: center;
-  width: 300px;
+.sec-2 div {
+  max-width: 300px;
 }
 
-.feature img {
-  width: 300px;
-  margin-bottom: 10px;
+.sec-2 img {
+  width: 80px;
+  margin-bottom: 15px;
 }
 
-/* ====== NOSOTROS ====== */
-.about {
-  background: url("assets/images/nosotros-bg.jpg") no-repeat center/cover;
+.sec-2 p {
+  font-size: 0.95rem;
+  color: #f0f8ff;
+  line-height: 1.5;
+}
+
+/* ====== SECCIÓN NOSOTROS ====== */
+.sec-3 {
   position: relative;
-  padding: 80px 20px;
   text-align: center;
+  padding: 100px 40px;
 }
 
-.overlay-blue {
+.fondo-de-nostros img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(11, 79, 156, 0.8);
-  z-index: 0;
+  z-index: -1;
+  filter: brightness(50%);
 }
 
-.about h2 {
-  position: relative;
-  z-index: 1;
-  font-size: 28px;
+.sec-3 h2 {
+  font-size: 2rem;
   margin-bottom: 40px;
-  text-transform: uppercase;
+  color: #fff;
 }
 
 .team {
-  position: relative;
-  z-index: 1;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
 }
 
-.member {
-  width: 150px;
-}
-
-.member img {
-  width: 100%;
+.team div {
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
+  padding: 20px;
+  width: 200px;
 }
 
-.member h3 {
-  font-size: 14px;
-  margin-top: 10px;
+.team img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-.member p {
-  font-size: 12px;
-  color: #cde2ff;
+.team h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.team p {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+/* ====== SECCIÓN INFO (ABAJO DE NOSOTROS) ====== */
+.sec-4 {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 100px 60px;
+}
+
+.fondo-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: brightness(40%);
 }
 
 .about-info {
-  background: url("assets/images/about-bg.jpg") no-repeat center/cover;
-  position: relative;
-  margin-top: 60px;
-  padding: 60px 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
   border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.overlay-dark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
+.about-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
-.about-info h3,
 .about-info p {
-  position: relative;
-  z-index: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e2e8f0;
 }
 
-/* ====== CONTACTO ====== */
-.contact {
-  background: url("assets/images/contacto-bg.jpg") no-repeat center/cover;
+/* ====== SECCIÓN CONTACTO ====== */
+.sec-5 {
   position: relative;
-  padding: 100px 20px;
+  padding: 100px 60px;
   text-align: center;
 }
 
-.contact .overlay {
+.fondo-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  filter: brightness(40%);
 }
 
-.contact h2,
-.contact p,
-.contact-form,
-.consulta {
-  position: relative;
-  z-index: 1;
+.arriba-contactanos h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.arriba-contactanos p {
+  color: #e0e7ff;
+  margin-bottom: 40px;
 }
 
 .contact-form {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
 }
 
-.form-left,
-.form-right {
-  width: 45%;
+.form-left, .form-right {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+  flex: 1;
 }
 
-input,
-textarea {
-  padding: 10px;
+input, textarea {
+  padding: 12px;
+  border-radius: 6px;
   border: none;
-  border-radius: 5px;
-  font-size: 14px;
+  outline: none;
 }
 
 textarea {
   height: 200px;
+  resize: none;
 }
 
 button {
-  background-color: #0b4f9c;
+  background-color: #0b4ea2;
   color: white;
   border: none;
-  border-radius: 5px;
-  padding: 10px;
+  padding: 12px 20px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 button:hover {
-  background-color: #083d7a;
+  background-color: #1b6ee2;
+}
+
+.consulta {
+  margin-top: 50px;
+}
+
+.consulta input {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  width: 250px;
+  border: none;
 }
 
 /* ====== FOOTER ====== */
 footer {
-  background-color: #000c22;
-  padding: 40px 20px;
-  color: #fff;
+  background-color: #003366;
+  padding: 50px 60px;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-logo img {
+  width: 180px;
+  height: auto;
 }
 
 .footer-links {
   display: flex;
-  gap: 40px;
+  gap: 80px;
+  flex-wrap: wrap;
 }
 
 .footer-links h4 {
   margin-bottom: 10px;
-  color: #bcdcff;
+  font-size: 1rem;
+  color: #fff;
 }
 
 .footer-links ul {
@@ -275,35 +331,52 @@ footer {
 }
 
 .footer-links a {
-  color: #fff;
   text-decoration: none;
+  color: #dbeafe;
+  transition: color 0.3s ease;
 }
 
-.footer-libro img {
-  width: 40px;
-  margin-bottom: 5px;
+.footer-links a:hover {
+  color: #bcdcff;
 }
 
 .footer-libro a {
-  display: block;
-  background: #0b4f9c;
-  padding: 6px 10px;
-  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #0b4ea2;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
   text-decoration: none;
-  font-size: 13px;
+}
+
+.footer-libro a:hover {
+  background-color: #1b6ee2;
 }
 
 /* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
-  .hero-content {
-    width: 90%;
+  nav {
+    flex-direction: column;
+    gap: 10px;
   }
-  .form-left,
-  .form-right {
-    width: 90%;
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  .footer-links {
+
+  .team {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    flex-direction: column;
+  }
+
+  footer {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 }
