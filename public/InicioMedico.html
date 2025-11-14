@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión - MEDICONNECT</title>
     <link rel="stylesheet" href="assets/styles/InicioMedico.css">
+    <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'> 
+
 </head>
 <body>
 
@@ -30,16 +32,16 @@
 
     <form class="login-form">
         <div class="input-group">
-            <span class="icon">👤</span>
-            <input type="text" placeholder="Usuario" >
+            <i class='bxr  bx-user-square'    ></i> 
+            <input type="text" placeholder="Usuario" required>
         </div>
 
         <div class="input-group">
             <span class="icon">🔑</span>
-            <input type="password" placeholder="Contraseña" >
+            <input type="password" placeholder="Contraseña" required>
         </div>
 
-        <button type="submit" class="btn-primary"onclick="window.location.href='IniciadoMedico.html'">INICIAR SESIÓN</button>
+        <button type="submit" class="btn-primary" onclick="window.location.href='iniciadoMedico.html'">INICIAR SESIÓN</button>
 
         <p class="register-text">
             ¿No tienes cuenta? <a href="Registro-Medico.html">Regístrate</a>
@@ -48,10 +50,10 @@
         <a href="Recuperación-medico.html" class="forgot">He olvidado mi contraseña</a>
 
         <button class="btn-secondary" onclick="window.location.href='pantalla-medi-paci.html'">SALIR</button>
+
     </form>
 
 </section>
 
 </body>
 </html>
-
