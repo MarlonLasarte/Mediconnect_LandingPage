@@ -1,0 +1,55 @@
+/* --- Imagen de fondo --- */
+.fondo-pantall-medi-paci {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+
+.fondo-pantall-medi-paci img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.85);
+}
+
+/* --- Contenedor principal que divide en 2 columnas --- */
+.overlay-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+
+/* --- Tarjetas de Médico y Paciente --- */
+.option-card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* fondo gris oscuro transparente */
+    background: rgba(0, 0, 0, 0.25);
+
+    /* transición suave cuando se oscurece */
+    transition: background 0.3s ease;
+}
+
+.option-card:hover {
+    background: rgba(0, 0, 0, 0.45); /* se oscurece al pasar el cursor */
+}
+
+/* --- Icono --- */
+.icon img {
+    width: 80px;
+    opacity: 0.9;
+}
+
+/* --- Título PRINCIPAL (MÉDICO/PACIENTE) --- */
+.option-card h2 {
+    margin-top: 15px;
+    font-size: 28px;
+    color: white;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+}

@@ -109,8 +109,9 @@ height: auto;
 }
 
 .sec-2 img {
-  width: 80px;
-  margin-bottom: 15px;
+ text-align: center;
+  width: 300px;
+  margin-bottom: 10px;
 }
 
 .sec-2 p {
@@ -124,11 +125,13 @@ height: auto;
   position: relative;
   text-align: center;
   padding: 100px 40px;
+  overflow: hidden;
+  background-color: rgba(0, 51, 102, 0.81);;
 }
 
 .fondo-de-nostros img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -161,7 +164,7 @@ height: auto;
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 60px;
   margin-bottom: 10px;
 }
 
@@ -379,4 +382,13 @@ footer {
     align-items: center;
     text-align: center;
   }
+ .overlay-blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 51, 102, 0.81); 
+  z-index: 0; /* Debajo del texto */
+}
 }
