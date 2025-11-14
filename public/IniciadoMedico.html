@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitácora Digital</title>
+    <link rel="stylesheet" href="assets/styles/iniciadoMedico.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel='stylesheet' >
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="assets/images/LogoMediBitacora.png" alt="logo">
+        </div>
+
+        <ul class="menu">
+            <li><i class="fa-solid fa-house"></i> Inicio</li>
+            <li><i class="fa-solid fa-user-group"></i> Mis pacientes</li>
+            <li><i class="fa-solid fa-notes-medical"></i> Bitácora</li>
+            <li><i class="fa-solid fa-calendar"></i> Agenda</li>
+            <li><i class="fa-solid fa-file"></i> Documentos</li>
+            <li><i class="fa-solid fa-gear"></i> Configuración</li>
+        </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="contenido">
+
+        <h1 class="titulo">Bitácora digital</h1>
+
+        <!-- BUSCADOR -->
+        <div class="buscador">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Buscar paciente">
+        </div>
+
+        <!-- TARJETAS DE ESTADISTICAS -->
+        <div class="stats">
+            <div class="stat-box">
+                <h2>3</h2>
+                <p>Pacientes asignados</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>8</h2>
+                <p>Notas hoy</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>1</h2>
+                <p>Alertas pendientes</p>
+            </div>
+        </div>
+
+        <!-- FILTROS -->
+        <div class="filtros">
+            <span class="tag urgente">Urgente</span>
+            <span class="tag evolucion">Evolución</span>
+            <span class="tag observacion">Observación</span>
+            <span class="tag alerta">Alerta</span>
+        </div>
+
+        <h2 class="subtitulo">Mis pacientes - Turno mañana</h2>
+
+        <!-- GRID DE PACIENTES -->
+        <div class="pacientes-grid">
+            <!-- CARD PACIENTE -->
+            <div class="card paciente">
+                <span class="estado-badge badge-alerta">Alerta</span>
+                <h3>Lionel Manés</h3>
+                <p>Habitación 120</p>
+                <p><strong>Edad:</strong> 19 años</p>
+                <p><strong>Condición:</strong> Post-operativo</p>
+                <p><strong>Última nota:</strong> Hoy 10:30 pm</p>
+                <button class="btn"onclick="window.location.href='BitacoraPaciente.html'">Ver Bitácora</button>
+            </div>
+
+            <!-- SIGNOS VITALES -->
+            <div class="card signos">
+                <h4>Signos Vitales</h4>
+                <p>Temperatura: 37.2°C</p>
+                <p>Presión arterial: 120/80 mmHg</p>
+                <p>Frecuencia cardiaca: 78 bpm</p>
+                <p>Saturación: 92 %</p>
+                <img src="assets/images/graficoTemperatura.png" class="grafico">
+            </div>
+
+            <!-- MEDICACIÓN -->
+            <div class="card medicacion">
+                <h4>Medicación Actual</h4>
+                <p>Analgésico: Ibuprofeno 400mg cada 8h</p>
+                <p>Antibiótico: Amoxicilina 500mg cada 12h</p>
+                <p>Última dosis: Hoy 9:00 AM</p>
+            </div>
+                <!-- ========================= -->
+    <!--  SEGUNDA FILA (AGREGADA)  -->
+    <!-- ========================= -->
+
+    <!-- CARD PACIENTE 2 -->
+    <div class="card paciente">
+        <span class="estado-badge badge-evolucion">Evolución</span>
+        <h3>Patroclo García</h3>
+        <p>Habitación 121</p>
+        <p><strong>Edad:</strong> 19 años</p>
+        <p><strong>Condición:</strong> Post-operativo</p>
+        <p><strong>Última nota:</strong> Hoy 10:30 pm</p>
+        <button class="btn">Ver Bitácora</button>
+    </div>
+
+    <!-- SIGNOS VITALES 2 -->
+    <div class="card signos">
+        <h4>Signos Vitales</h4>
+        <p>Temperatura: 37.2°C</p>
+        <p>Presión arterial: 120/80 mmHg</p>
+        <p>Frecuencia cardiaca: 78 bpm</p>
+        <p>Saturación: 92 %</p>
+        <img src="assets/images/graficoTemperatura.png" class="grafico">
+    </div>
+
+    <!-- MEDICACIÓN 2 -->
+    <div class="card medicacion">
+        <h4>Medicación Actual</h4>
+        <p>Analgésico: Iboprufeno 400mg cada 8h</p>
+        <p>Antibiótico: Amoxicilina 500mg cada 12h</p>
+        <p>Última dosis: Hoy 8:00 AM</p>
+    </div>
+
+    <!-- ========================= -->
+    <!--  TERCERA FILA (AGREGADA)  -->
+    <!-- ========================= -->
+
+    <!-- CARD PACIENTE 3 -->
+    <div class="card paciente">
+         <span class="estado-badge badge-observacion">Observación</span>
+        <h3>Ivonne Ibáñez</h3>
+        <p>Habitación 123</p>
+        <p><strong>Edad:</strong> 19 años</p>
+        <p><strong>Condición:</strong> Post-operativo</p>
+        <p><strong>Última nota:</strong> Hoy 10:30 pm</p>
+        <button class="btn">Ver Bitácora</button>
+    </div>
+
+    <!-- SIGNOS VITALES 3 -->
+    <div class="card signos">
+        <h4>Signos Vitales</h4>
+        <p>Temperatura: 37.2°C</p>
+        <p>Presión arterial: 120/80 mmHg</p>
+        <p>Frecuencia cardiaca: 78 bpm</p>
+        <p>Saturación: 92 %</p>
+        <img src="assets/images/graficoTemperatura.png" class="grafico">
+    </div>
+
+    <!-- MEDICACIÓN 3 -->
+    <div class="card medicacion">
+        <h4>Medicación Actual</h4>
+        <p>Analgésico: Ibuprofeno 400mg cada 8h</p>
+        <p>Antibiótico: Amoxicilina 500mg cada 12h</p>
+        <p>Última dosis: Hoy 8:00 AM</p>
+    </div>
+
+
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
