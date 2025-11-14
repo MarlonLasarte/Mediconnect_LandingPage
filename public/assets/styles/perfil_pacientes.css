@@ -47,7 +47,7 @@
             margin-bottom: 1.25rem;
         }
 
-        .patient-icon {
+        .patient-icon, .patient-image {
             width: 4rem; /* w-16 */
             height: 4rem; /* h-16 */
             flex-shrink: 0;
