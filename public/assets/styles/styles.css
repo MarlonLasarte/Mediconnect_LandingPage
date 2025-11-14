@@ -26,7 +26,7 @@ nav {
 }
 
 .logo img {
-width: 250px;
+width: 280px;
 height: auto;
 }
 
@@ -35,22 +35,39 @@ height: auto;
   gap: 50px;
   list-style: none;
   align-items: center;
+    margin-left: 2rem;
+  transition: .3s; 
+  font-size: 1.7rem;
 }
 .menu a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+
 }
 
 .menu a:hover {
-  color: #bcdcff;
+  color: #0d9deb;
+}
+.menu a.login-btn:hover{
+  color: white;
+  background:linear-gradient(234deg,#266db4, #2b58df);
 }
 
 .login-btn {
-  background-color: #083d7a;
-  padding: 8px 16px;
-  border-radius: 4px;
+  background: linear-gradient(135deg, #003366, #1c18dc); /* degradado Azul */
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease; /* efecto suave para que se vea el efecto */
 }
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #0d9deb, #03a9f4); /* iluminado */
+  box-shadow: 0 0 12px rgba(3, 169, 244, 0.6); /* brillo celeste */
+}
+
 
 .sec-1 {
   position: relative;
@@ -72,24 +89,26 @@ height: auto;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 40px 60px;
+  padding: 100px 120px;
   border-radius: 10px;
   text-align: center;
   max-width: 700px;
 }
 
 .contenido-cuadro-negro h1 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+  font-size: 2.3rem;
+  margin-bottom: 20px;
   color: #fff;
 }
 
 .contenido-cuadro-negro p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   line-height: 1.6;
   color: #e2e8f0;
 }
 /* ====== SECCIÓN CARACTERÍSTICAS ====== */
+/* ====== TARJETAS DE CARACTERISTICAS COMO NOSOTROS ====== */
+
 .sec-2 {
   background-color: #003366;
   padding: 100px 40px;
@@ -127,8 +146,9 @@ height: auto;
 
 .caracteristicas-cards p {
   font-size: 0.9rem;
-  color: #e2e8f0;
+  color: #e2e8f0;
 }
+
 
 /* ====== SECCIÓN NOSOTROS ====== */
 .sec-3 {
