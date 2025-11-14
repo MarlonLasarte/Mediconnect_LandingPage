@@ -47,7 +47,14 @@
             margin-bottom: 1.25rem;
         }
 
-        .patient-icon, .patient-image {
+        .patient-icon {
+            width: 4rem; /* w-16 */
+            height: 4rem; /* h-16 */
+            flex-shrink: 0;
+            color: #1f2937; /* text-gray-800 */
+        }
+
+        .patient-image {
             width: 4rem; /* w-16 */
             height: 4rem; /* h-16 */
             flex-shrink: 0;
