@@ -1,0 +1,142 @@
+/* ======== ESTILOS GENERALES ======== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #F5FAFF;
+}
+
+header {
+    background-color: #0A3A66;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+}
+
+/* ======== LAYOUT PRINCIPAL ======== */
+.layout {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+/* ======== SIDEBAR ======== */
+.sidebar {
+    width: 300px;
+    background: white;
+    border-right: 2px solid #0A3A66;
+    padding: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-info img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.sidebar li img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+/* Opción activa */
+.sidebar li.active {
+    background: #C7E6F5;
+    font-weight: bold;
+}
+
+/* ======== CONTENIDO PRINCIPAL ======== */
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+.content h2 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.content h2 img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* ======== TABLA ======== */
+.table-container {
+    background: white;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead tr {
+    border-bottom: 1px solid black;
+}
+
+table th, table td {
+    padding: 12px 8px;
+}
+
+tbody tr {
+    border-top: 1px solid #999;
+}
+
+td img {
+    width: 26px;
+    cursor: pointer;
+}
+
+/* Acciones (íconos alineados) */
+td:last-child img {
+    margin: 0 6px;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 900px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #0A3A66;
+    }
+}
