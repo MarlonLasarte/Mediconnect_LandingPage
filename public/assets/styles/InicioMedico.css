@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sulphur+Point:wght@300;400;700&display=swap');
+
+/* Reinicio de estilos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.medi {
+    color: white; /* Azul */
+    font-weight: bold;
+}
+
+.connect {
+    color: black; /* Negro */
+    font-weight: bold;
+}
+
+/*font-family: "Roboto Condensed", sans-serif;*/
+/* Estilos generales */
+body {
+    font-family: "Sulphur Point", sans-serif;
+    background-color: white; /* Fondo exterior oscuro */
+}
+
+/* Header */
+.header {
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    background-color: #003366; /* Azul oscuro */
+    color: white;
+    text-align: center;
+    padding: 15px 40px; /* Altura del header */
+}
+
+/* Título principal */
+.titulo {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: "Sulphur Point", sans-serif;
+}
+
+/* Subtítulo */
+.subtitulo {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Sulphur Point", sans-serif;
+}
+
+.intro img {
+    width: 100%;      /* Para ocupar todo el ancho */
+    height: auto;     /* Mantiene proporción */
+    display: block;   /* Elimina espacio debajo de la imagen */
+}
+
+.intro {
+    margin-top: 0;     /* Evita espacio arriba si no lo necesitas */
+    padding: 0;
+}
+.intro div {
+    padding: 0;
+    margin: 0;
+}
+
+/*Formulario XD*/
+
+/*font-family: "Montserrat", sans-serif;*/
+/* --- Título del Login --- */
+.login-title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 42px;
+    font-weight: 700;
+    font-family: "Sulphur Point", sans-serif;
+}
+
+.azul2 {
+    color: #003366; /* Azul como la imagen */
+}
+
+/* --- Contenedor del formulario --- */
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* --- Campos de texto --- */
+.input-group {
+    position: relative;
+    width: 100%;
+    background: #F4F4F4;
+    border: 2px solid #C7C7C7;
+    border-radius: 12px;
+    padding: 12px;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.input-group .icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+}
+
+/* --- Botón principal --- */
+.btn-primary {
+    width: 100%;
+    background-color: #003366;
+    color: white;
+    padding: 14px 0;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 22px;
+    cursor: pointer;
+    font-family: "Sulphur Point", sans-serif;
+}
+
+/* Efecto hover para el botón principal */
+.btn-primary:hover {
+    background-color: #0055aa; /* Azul más claro */
+    transition: 0.3s ease;
+}
+
+/* Efecto hover para el botón secundario */
+.btn-secondary:hover {
+    background-color: #555; /* Gris oscuro o el color que desees */
+    transition: 0.3s ease;
+}
+
+/* --- Texto de registro y enlaces --- */
+.register-text {
+    margin-top: 14px;
+    font-size: 15px;
+}
+
+.register-text a {
+    color: #003366;
+    font-weight: bold;
+}
+
+.forgot {
+    display: block;
+    margin-top: 4px;
+    color: #333;
+    font-size: 14px;
+}
+
+/* --- Botón secundario --- */
+.btn-secondary {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #003366;
+    color: white;
+    padding: 14px 0;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Sulphur Point", sans-serif;
+}
