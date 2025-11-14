@@ -39,6 +39,18 @@ body {
 .menu li i {
     margin-right: 10px;
 }
+.logout-red {
+    background: #D9534F;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.logout-red:hover {
+    background: #b7423f;
+}
+
 
 /* CONTENIDO PRINCIPAL */
 .contenido {
