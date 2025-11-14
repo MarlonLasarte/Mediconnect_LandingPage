@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mediconnect_Inicio_Sesión</title>
+    <link rel="stylesheet" href="login_pacientes.css" />
+  </head>
+
+  <body>
+    <main class="login-wrapper">
+      <!-- columna izquierda -->
+      <section class="left-panel">
+        <img src="enfermera.png" alt="Doctora" class="left-image" />
+
+        <div class="logo-overlay">
+          <h1>
+            <span class="medi">MEDI</span><span class="connect">CONNECT</span>
+          </h1>
+          <div class="underline"></div>
+        </div>
+      </section>
+
+      <!-- columna derecha -->
+      <section class="right-panel">
+        <div class="form-box">
+          <h2>Inicio de sesión</h2>
+
+          <form action="#" method="post">
+            <!-- tipo documento -->
+            <label for="tipo">Tipo Documento</label>
+            <select id="tipo" name="tipo" required>
+              <option value="">Seleccione</option>
+              <option value="dni">DNI</option>
+              <option value="ce">Carné de Extranjería</option>
+              <option value="pasaporte">Pasaporte</option>
+            </select>
+
+            <!-- documento -->
+            <label for="documento">Documento</label>
+            <input type="text" id="documento" name="documento" required />
+
+            <!-- botón -->
+            <button type="submit" class="btn">
+              Siguiente <span class="arrow">➜</span>
+            </button>
+          </form>
+
+          <p class="no-cuenta">
+            ¿No tiene una cuenta? Comuníquese con nuestra central telefónica
+            999-000
+          </p>
+
+          <!-- footer para captcha -->
+          <footer class="captcha-footer">
+            <div class="captcha-box">
+              <p>reCAPTCHA</p>
+            </div>
+          </footer>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
