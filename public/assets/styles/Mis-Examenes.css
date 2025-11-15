@@ -73,6 +73,17 @@ header img {
     background: #C7E6F5;
     font-weight: bold;
 }
+.logout-red2 {
+    background: #D9534F;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.logout-red2:hover {
+    background: #b7423f;
+}
 
 /* ======== CONTENIDO PRINCIPAL ======== */
 .content {
