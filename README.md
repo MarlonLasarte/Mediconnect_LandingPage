@@ -5,12 +5,15 @@ Mediconnect es una bitácora digital médica. El proyecto incluye una vista para
 
 # 👥👥👥 Integrantes
 Alvarado Millan, Boris 			      	U20241B676  
+
 Blancas Chavez, Carlos Franco 			U20241A322
 
 Cuadros Villanueva, Marcelo Fabio 	U202422890 
+
 Ibañez Torres, Ivonne Beatriz 			U20241A995
 
 Surco Villasante, Jorge Alexs 			U202015743
+
 Vargas Cossio, Luciana Tahnee 			U202418075
 
 # 👩🏻‍⚕️👨🏻‍⚕️Segmento Objetivo
