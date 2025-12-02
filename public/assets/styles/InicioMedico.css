@@ -8,12 +8,14 @@
 }
 
 .medi {
-    color: white; /* Azul */
+    color: white;
+    /* Azul */
     font-weight: bold;
 }
 
 .connect {
-    color: black; /* Negro */
+    color: black;
+    /* Negro */
     font-weight: bold;
 }
 
@@ -21,16 +23,20 @@
 /* Estilos generales */
 body {
     font-family: "Sulphur Point", sans-serif;
-    background-color: white; /* Fondo exterior oscuro */
+    background-color: white;
+    /* Fondo exterior oscuro */
 }
 
 /* Header */
 .header {
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    background-color: #003366; /* Azul oscuro */
+    width: 100%;
+    /* Ocupa todo el ancho de la pantalla */
+    background-color: #003366;
+    /* Azul oscuro */
     color: white;
     text-align: center;
-    padding: 15px 40px; /* Altura del header */
+    padding: 15px 40px;
+    /* Altura del header */
 }
 
 /* Título principal */
@@ -49,15 +55,20 @@ body {
 }
 
 .intro img {
-    width: 100%;      /* Para ocupar todo el ancho */
-    height: auto;     /* Mantiene proporción */
-    display: block;   /* Elimina espacio debajo de la imagen */
+    width: 100%;
+    /* Para ocupar todo el ancho */
+    height: auto;
+    /* Mantiene proporción */
+    display: block;
+    /* Elimina espacio debajo de la imagen */
 }
 
 .intro {
-    margin-top: 0;     /* Evita espacio arriba si no lo necesitas */
+    margin-top: 0;
+    /* Evita espacio arriba si no lo necesitas */
     padding: 0;
 }
+
 .intro div {
     padding: 0;
     margin: 0;
@@ -76,7 +87,8 @@ body {
 }
 
 .azul2 {
-    color: #003366; /* Azul como la imagen */
+    color: #003366;
+    /* Azul como la imagen */
 }
 
 /* --- Contenedor del formulario --- */
@@ -131,13 +143,15 @@ body {
 
 /* Efecto hover para el botón principal */
 .btn-primary:hover {
-    background-color: #0055aa; /* Azul más claro */
+    background-color: #0055aa;
+    /* Azul más claro */
     transition: 0.3s ease;
 }
 
 /* Efecto hover para el botón secundario */
 .btn-secondary:hover {
-    background-color: #555; /* Gris oscuro o el color que desees */
+    background-color: #555;
+    /* Gris oscuro o el color que desees */
     transition: 0.3s ease;
 }
 
@@ -172,4 +186,20 @@ body {
     cursor: pointer;
     font-weight: bold;
     font-family: "Sulphur Point", sans-serif;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+    }
+
+    .login-container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .login-title {
+        font-size: 32px;
+    }
 }

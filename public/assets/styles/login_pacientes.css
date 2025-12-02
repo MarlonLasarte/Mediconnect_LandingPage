@@ -1,5 +1,5 @@
 /* estilo global */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,10 +9,12 @@
 body {
   background: #ffffff;
 }
+
 /* layout principal */
 .login-wrapper {
   display: flex;
-  height: 100vh; /* pantalla completa */
+  height: 100vh;
+  /* pantalla completa */
 }
 
 /* columna izquierda */
@@ -20,6 +22,7 @@ body {
   width: 50%;
   position: relative;
 }
+
 .left-panel .left-image {
   width: 100%;
   height: 100%;
@@ -33,18 +36,22 @@ body {
   left: 15%;
   transform: translateY(-50%);
 }
+
 .logo-overlay h1 {
   font-size: 40px;
   font-weight: 900;
   letter-spacing: 1px;
   color: #0b2a4a;
 }
+
 .logo-overlay .medi {
   color: #0b2a4a;
 }
+
 .logo-overlay .connect {
   color: #0066cc;
 }
+
 .logo-overlay .underline {
   width: 270px;
   height: 4px;
@@ -59,6 +66,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .form-box {
   width: 70%;
   max-width: 380px;
@@ -81,6 +89,7 @@ label {
   margin-bottom: 5px;
   display: block;
 }
+
 input,
 select {
   width: 100%;
@@ -91,6 +100,7 @@ select {
   outline: none;
   font-size: 14px;
 }
+
 input:focus,
 select:focus {
   border-color: #0077ff;
@@ -114,9 +124,11 @@ select:focus {
   align-items: center;
   gap: 6px;
 }
+
 .btn:hover {
   background-color: #003366;
 }
+
 .arrow {
   font-size: 16px;
 }
@@ -133,14 +145,16 @@ select:focus {
 .form-box {
   display: flex;
   flex-direction: column;
-  min-height: 430px; /* altura mínima para evitar que todo se suba */
+  min-height: 430px;
+  /* altura mínima para evitar que todo se suba */
   width: 70%;
   max-width: 380px;
 }
 
 /* Footer del captcha */
 .captcha-footer {
-  margin-top: auto; /* coloca el captcha al fondo */
+  margin-top: auto;
+  /* coloca el captcha al fondo */
   display: flex;
   justify-content: flex-end;
 }
@@ -165,3 +179,35 @@ select:focus {
   margin: 0;
 }
 
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .login-wrapper {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+  }
+
+  .left-panel {
+    height: 40vh;
+  }
+
+  .right-panel {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .logo-overlay {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .form-box {
+    width: 90%;
+    min-height: auto;
+  }
+}

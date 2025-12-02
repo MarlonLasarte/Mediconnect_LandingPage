@@ -73,6 +73,7 @@ header img {
     background: #C7E6F5;
     font-weight: bold;
 }
+
 .logout-red2 {
     background: #D9534F;
     color: white;
@@ -121,7 +122,8 @@ thead tr {
     border-bottom: 1px solid black;
 }
 
-table th, table td {
+table th,
+table td {
     padding: 12px 8px;
 }
 
@@ -149,5 +151,26 @@ td:last-child img {
         width: 100%;
         border-right: none;
         border-bottom: 2px solid #0A3A66;
+    }
+}
+
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #0A3A66;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .table-container {
+        overflow-x: auto;
     }
 }

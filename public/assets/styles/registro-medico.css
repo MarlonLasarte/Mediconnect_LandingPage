@@ -8,12 +8,14 @@
 }
 
 .medi {
-    color: white; /* Azul */
+    color: white;
+    /* Azul */
     font-weight: bold;
 }
 
 .connect {
-    color: black; /* Negro */
+    color: black;
+    /* Negro */
     font-weight: bold;
 }
 
@@ -21,16 +23,20 @@
 /* Estilos generales */
 body {
     font-family: "Sulphur Point", sans-serif;
-    background-color: white; /* Fondo exterior oscuro */
+    background-color: white;
+    /* Fondo exterior oscuro */
 }
 
 /* Header */
 .header {
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    background-color: #003366; /* Azul oscuro */
+    width: 100%;
+    /* Ocupa todo el ancho de la pantalla */
+    background-color: #003366;
+    /* Azul oscuro */
     color: white;
     text-align: center;
-    padding: 15px 40px; /* Altura del header */
+    padding: 15px 40px;
+    /* Altura del header */
 }
 
 /* Título principal */
@@ -49,15 +55,20 @@ body {
 }
 
 .intro img {
-    width: 100%;      /* Para ocupar todo el ancho */
-    height: auto;     /* Mantiene proporción */
-    display: block;   /* Elimina espacio debajo de la imagen */
+    width: 100%;
+    /* Para ocupar todo el ancho */
+    height: auto;
+    /* Mantiene proporción */
+    display: block;
+    /* Elimina espacio debajo de la imagen */
 }
 
 .intro {
-    margin-top: 0;     /* Evita espacio arriba si no lo necesitas */
+    margin-top: 0;
+    /* Evita espacio arriba si no lo necesitas */
     padding: 0;
 }
+
 .intro div {
     padding: 0;
     margin: 0;
@@ -74,65 +85,81 @@ body {
 }
 
 .azul2 {
-    color: #003366; /* Azul como la imagen */
+    color: #003366;
+    /* Azul como la imagen */
 }
 
 .formulario {
-width: 100%;
-display: flex;
-justify-content: center;
-padding: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
 }
 
 
 .formulario form {
-width: 90%;
-max-width: 430px;
-display: flex;
-flex-direction: column;
-gap: 15px;
-font-family: "Sulphur Point", sans-serif;
+    width: 90%;
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: "Sulphur Point", sans-serif;
 }
 
 
 .formulario input {
-width: 100%;
-padding: 14px;
-border: 1px solid #ccc;
-border-radius: 8px;
-font-size: 15px;
-font-family: inherit;
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
 }
 
 
 .info {
-font-size: 12px;
-color: #555;
-margin-top: -10px;
+    font-size: 12px;
+    color: #555;
+    margin-top: -10px;
 }
 
 
 .btn-crear {
-width: 100%;
-padding: 14px;
-background-color: #003366;
-color: white;
-border: none;
-border-radius: 8px;
-font-size: 16px;
-cursor: pointer;
-margin-top: 10px;
+    width: 100%;
+    padding: 14px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 
 .btn-crear:hover {
-background-color: #00264d;
+    background-color: #00264d;
 }
 
 
 .legal {
-font-size: 12px;
-color: #333;
-margin-top: 10px;
-text-align: center;
+    font-size: 12px;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+    }
+
+    .formulario form {
+        width: 90%;
+    }
+
+    .login-title {
+        font-size: 32px;
+    }
 }

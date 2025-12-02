@@ -462,3 +462,28 @@ body {
     color: #dc2626;
     /* text-red-600 */
 }
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        flex-basis: 100%;
+    }
+
+    .back-button {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .sidebar-card {
+        position: static;
+    }
+}

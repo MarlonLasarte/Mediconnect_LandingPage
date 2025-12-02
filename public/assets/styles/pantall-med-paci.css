@@ -36,7 +36,8 @@
 }
 
 .option-card:hover {
-    background: rgba(0, 0, 0, 0.45); /* se oscurece al pasar el cursor */
+    background: rgba(0, 0, 0, 0.45);
+    /* se oscurece al pasar el cursor */
 }
 
 /* --- Icono --- */
@@ -52,4 +53,16 @@
     color: white;
     font-family: Arial, sans-serif;
     letter-spacing: 1px;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+    .overlay-container {
+        flex-direction: column;
+    }
+
+    .option-card {
+        width: 100%;
+        height: 50%;
+    }
 }

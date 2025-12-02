@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   color: #fff;
@@ -19,6 +20,7 @@ header {
   top: 0;
   z-index: 100;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -26,8 +28,8 @@ nav {
 }
 
 .logo img {
-width: 280px;
-height: auto;
+  width: 280px;
+  height: auto;
 }
 
 .menu {
@@ -35,10 +37,11 @@ height: auto;
   gap: 50px;
   list-style: none;
   align-items: center;
-    margin-left: 2rem;
-  transition: .3s; 
+  margin-left: 2rem;
+  transition: .3s;
   font-size: 1.7rem;
 }
+
 .menu a {
   color: white;
   text-decoration: none;
@@ -49,29 +52,35 @@ height: auto;
 .menu a:hover {
   color: #0d9deb;
 }
-.menu a.login-btn:hover{
+
+.menu a.login-btn:hover {
   color: white;
-  background:linear-gradient(234deg,#266db4, #2b58df);
+  background: linear-gradient(234deg, #266db4, #2b58df);
 }
 
 .login-btn {
-  background: linear-gradient(135deg, #003366, #1c18dc); /* degradado Azul */
+  background: linear-gradient(135deg, #003366, #1c18dc);
+  /* degradado Azul */
   padding: 10px 20px;
   border-radius: 6px;
   color: white;
   font-weight: bold;
-  transition: 0.3s ease; /* efecto suave para que se vea el efecto */
+  transition: 0.3s ease;
+  /* efecto suave para que se vea el efecto */
 }
 
 .login-btn:hover {
-  background: linear-gradient(135deg, #0d9deb, #03a9f4); /* iluminado */
-  box-shadow: 0 0 12px rgba(3, 169, 244, 0.6); /* brillo celeste */
+  background: linear-gradient(135deg, #0d9deb, #03a9f4);
+  /* iluminado */
+  box-shadow: 0 0 12px rgba(3, 169, 244, 0.6);
+  /* brillo celeste */
 }
 
 
 .sec-1 {
   position: relative;
-  margin-top: 90px; /* espacio para el header fijo */
+  margin-top: 90px;
+  /* espacio para el header fijo */
   height: 100vh;
   overflow: hidden;
 }
@@ -106,6 +115,7 @@ height: auto;
   line-height: 1.6;
   color: #e2e8f0;
 }
+
 /* ====== SECCIÓN CARACTERÍSTICAS ====== */
 /* ====== TARJETAS DE CARACTERISTICAS COMO NOSOTROS ====== */
 
@@ -156,7 +166,8 @@ height: auto;
   text-align: center;
   padding: 100px 40px;
   overflow: hidden;
-  background-color: rgba(0, 51, 102, 0.81);;
+  background-color: rgba(0, 51, 102, 0.81);
+  ;
 }
 
 .fondo-de-nostros img {
@@ -287,14 +298,16 @@ height: auto;
   margin: 0 auto;
 }
 
-.form-left, .form-right {
+.form-left,
+.form-right {
   display: flex;
   flex-direction: column;
   gap: 15px;
   flex: 1;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 12px;
   border-radius: 6px;
   border: none;
@@ -390,13 +403,46 @@ footer {
 /* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
   nav {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .hamburger {
+    display: flex;
     flex-direction: column;
-    gap: 10px;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1000;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
   }
 
   .menu {
-    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #003366;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    z-index: 999;
+    margin-left: 0;
+  }
+
+  .menu.active {
+    right: 0;
+  }
+
+  .menu a {
+    font-size: 1.5rem;
   }
 
   .team {
@@ -412,13 +458,15 @@ footer {
     align-items: center;
     text-align: center;
   }
- .overlay-blue {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 51, 102, 0.81); 
-  z-index: 0; /* Debajo del texto */
-}
+
+  .overlay-blue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 51, 102, 0.81);
+    z-index: 0;
+    /* Debajo del texto */
+  }
 }

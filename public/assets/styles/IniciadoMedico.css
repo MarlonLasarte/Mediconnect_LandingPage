@@ -13,7 +13,7 @@ body {
     width: 260px;
     background: #ffffff;
     padding: 20px;
-    box-shadow: 3px 0 10px rgba(0,0,0,0.1);
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
     height: 100vh;
 }
 
@@ -39,6 +39,7 @@ body {
 .menu li i {
     margin-right: 10px;
 }
+
 .logout-red {
     background: #D9534F;
     color: white;
@@ -93,7 +94,7 @@ body {
     border-radius: 12px;
     width: 200px;
     text-align: center;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .stat-box h2 {
@@ -116,10 +117,22 @@ body {
     font-weight: 600;
 }
 
-.urgente { background: #2c7cf7; }
-.evolucion { background: #4caf50; }
-.observacion { background: #f4b400; }
-.alerta { background: #e53935; }
+.urgente {
+    background: #2c7cf7;
+}
+
+.evolucion {
+    background: #4caf50;
+}
+
+.observacion {
+    background: #f4b400;
+}
+
+.alerta {
+    background: #e53935;
+}
+
 /*Estado del paciente*/
 .paciente {
     position: relative;
@@ -136,10 +149,21 @@ body {
     color: white;
 }
 
-.badge-urgente { background: #2c7cf7; }
-.badge-evolucion { background: #4caf50; }
-.badge-observacion { background: #f4b400; }
-.badge-alerta { background: #e53935; }
+.badge-urgente {
+    background: #2c7cf7;
+}
+
+.badge-evolucion {
+    background: #4caf50;
+}
+
+.badge-observacion {
+    background: #f4b400;
+}
+
+.badge-alerta {
+    background: #e53935;
+}
 
 /* SUBTITULO */
 .subtitulo {
@@ -159,7 +183,7 @@ body {
     background: white;
     border-radius: 12px;
     padding: 18px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
 }
 
 .grafico {
@@ -179,4 +203,36 @@ body {
 
 .btn:hover {
     background: #8fc6ff;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenido {
+        padding: 15px;
+    }
+
+    .buscador {
+        width: 100%;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .stat-box {
+        width: 100%;
+    }
+
+    .pacientes-grid {
+        grid-template-columns: 1fr;
+    }
 }
