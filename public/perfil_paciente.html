@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,15 +9,21 @@
     <link rel='stylesheet' type='text/css' media='screen' href='assets/styles/perfil_pacientes.css'>
     <script src='main.js'></script>
 </head>
+
 <body>
+
     <!-- Contenedor principal -->
     <div class="container">
         <div class="main-layout">
+            <!--Boton a la izquierda para volver atras-->
+            <button class="back-button" onclick="window.location.href='IniciadoMedico.html'">
+                <img src="assets/images/back-icon.png" alt="Volver" class="back-icon">
+            </button>
 
             <!-- Columna Izquierda: Información del Paciente -->
             <section class="sidebar">
                 <div class="sidebar-card">
-                    
+
                     <!-- Info de Paciente -->
                     <div class="patient-info">
                         <!-- Icono SVG (recreando la segunda imagen) -->
@@ -25,7 +32,7 @@
                         </div>
                         <div>
                             <h2 class="patient-name">Lionel Armando Manés Hernandes</h2>
-                            <p class="patient-id">ID: 1987654  |     Hab: 120</p>
+                            <p class="patient-id">ID: 1987654 | Hab: 120</p>
                         </div>
                     </div>
 
@@ -58,7 +65,7 @@
             <!-- Columna Derecha: Historial del Paciente -->
             <section class="main-content">
                 <div class="main-card">
-                    
+
                     <!-- Cabecera del historial y filtros -->
                     <div class="main-header">
                         <h2 class="main-title">Historial de paciente</h2>
@@ -73,14 +80,16 @@
                     <!-- Formulario de Nueva Entrada -->
                     <form class="entry-form">
                         <div class="form-grid">
-                            <input type="text" placeholder="Ingrese el nombre del enfermero a Cargo..." class="form-input">
+                            <input type="text" placeholder="Ingrese el nombre del enfermero a Cargo..."
+                                class="form-input">
                             <select class="form-select">
                                 <option>Evolución</option>
                                 <option>Observación</option>
                                 <option>Alerta</option>
                             </select>
                         </div>
-                        <textarea rows="4" placeholder="Describa el estado del paciente...." class="form-textarea"></textarea>
+                        <textarea rows="4" placeholder="Describa el estado del paciente...."
+                            class="form-textarea"></textarea>
                         <div class="form-footer">
                             <button type="submit" class="form-submit-btn">
                                 Agregar Entrada
@@ -94,7 +103,7 @@
 
                         <!-- Tarjeta de Historial: Evolución -->
                         <div class="history-card card-green">
-                        
+
                             <div class="history-card-content">
                                 <div class="history-card-header">
                                     <div class="history-card-info">
@@ -104,7 +113,8 @@
                                     <span class="history-card-tag tag-green">Evolución</span>
                                 </div>
                                 <p class="history-card-body">
-                                    Paciente refiere dolor leve en hombro derecho. Analgesia indicada: Paracetamol 500 mg cada 8 horas. Control en 6 horas
+                                    Paciente refiere dolor leve en hombro derecho. Analgesia indicada: Paracetamol 500
+                                    mg cada 8 horas. Control en 6 horas
                                 </p>
                                 <div class="history-card-links">
                                     <span>ID: 1</span>
@@ -125,7 +135,8 @@
                                     <span class="history-card-tag tag-yellow">Observación</span>
                                 </div>
                                 <p class="history-card-body">
-                                    Paciente reporta náuseas intermitentes. Se indicó antiemético y se observó respuesta parcial. Mantener observación
+                                    Paciente reporta náuseas intermitentes. Se indicó antiemético y se observó respuesta
+                                    parcial. Mantener observación
                                 </p>
                                 <div class="history-card-links">
                                     <span>ID: 1</span>
@@ -146,7 +157,8 @@
                                     <span class="history-card-tag tag-red">Alerta</span>
                                 </div>
                                 <p class="history-card-body">
-                                    Reacción alérgica leve tras medicación. Se suspendió dosis y se aplicó suero antialérgico. Notificar a equipo de farmacia.
+                                    Reacción alérgica leve tras medicación. Se suspendió dosis y se aplicó suero
+                                    antialérgico. Notificar a equipo de farmacia.
                                 </p>
                                 <div class="history-card-links">
                                     <span>ID: 1</span>
@@ -163,6 +175,7 @@
         </div>
     </div>
 
-    
+
 </body>
+
 </html>
